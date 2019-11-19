@@ -7,6 +7,7 @@ import { store } from '+redux';
 
 import theme from './theme';
 import App from './App';
+import '+styles/main.scss';
 
 ReactModal.setAppElement('#root');
 ReactDOM.render(

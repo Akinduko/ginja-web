@@ -49,10 +49,6 @@ const helmetApp = {
         content: 'https://twitter.com/InquireDev'
       },
       {
-        name: 'twitter:image',
-        content: 'https://InquireDev.com/assets/images/social-img.jpg'
-      },
-      {
         property: 'url',
         content: 'https://InquireDev.com'
       },

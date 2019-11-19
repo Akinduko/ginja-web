@@ -16,7 +16,7 @@ TABLE OF CONTENTS
 @import 'theme/theme-variables';
 
 /* 1a.  Override Variables */
-@import 'custom/inq-variables';
+@import 'custom/variables';
 
 /* 2. Theme Mixins */
 @import 'theme/mixins';
@@ -136,6 +136,8 @@ TABLE OF CONTENTS
 @import 'custom/layout';
 
 @import 'custom/loader';
+
+@import 'components/index';
 
 html {
   font-size: 100% !important;
