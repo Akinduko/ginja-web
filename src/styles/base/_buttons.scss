@@ -1,0 +1,91 @@
+.btn-inq {
+  color: #fff;
+  background: #2376f3;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  font-family: $font-family-base, Roboto, sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+
+  &:focus {
+    outline: none;
+    outline-color: rgba(35, 118, 243, 0.5);
+    filter: saturate(150%);
+    cursor: pointer;
+    transform: translateY(2px);
+  }
+
+  &:active {
+    box-shadow: 2px 4px 10px 0 #cacaca;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+
+  &.--full {
+    width: 100%;
+  }
+
+  &.--sec-green {
+    color: #1baf8e;
+    background: rgba(72, 206, 176, 0.2);
+    padding: 0.9rem 1.87rem;
+    font-weight: 500;
+  }
+
+  &.--sec-blue {
+    color: #2376f3;
+    background: rgba(35, 118, 243, 0.2);
+    padding: 0.9rem 1.87rem;
+    font-weight: 500;
+  }
+
+  &.--auth-submit-form {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 0.9rem;
+  }
+}
+
+.btn--link {
+  background: transparent;
+  color: $inqblue;
+  padding: 0;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  font-size: 0.81rem;
+  cursor: pointer;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: 0.9rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    filter: saturate(150%);
+  }
+
+  &:focus {
+    outline: solid medium rgba(35, 118, 243, 0.5);
+    outline-color: rgba(35, 118, 243, 0.5);
+    transform: translateY(2px);
+    filter: saturate(150%);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &.--danger {
+    color: #ff5661;
+  }
+}

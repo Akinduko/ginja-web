@@ -1,0 +1,142 @@
+/*
+TABLE OF CONTENTS
+
+1. Theme Variables
+	1a. User Override Variables
+2. Theme Mixins
+
+*/
+
+// Import Bootstrap and its default variables
+// @import '~bootstrap/scss/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+/* 1. Theme Variables */
+@import 'theme/theme-variables';
+
+/* 1a.  Override Variables */
+@import 'custom/inq-variables';
+
+/* 2. Theme Mixins */
+@import 'theme/mixins';
+
+/* 3. Bootstrap Override Styles */
+
+/* 3a. Override default includes of bootstrap */
+@import 'theme/bootstrap-override/bootstrap';
+@import 'theme/bootstrap-override/variables';
+
+/* 3b. Override bootstrap table styles */
+@import 'theme/bootstrap-override/tables';
+
+/* 3c. Override bootstrap form styles */
+@import 'theme/bootstrap-override/forms';
+
+/* 3d. Override bootstrap navigation styles */
+@import 'theme/bootstrap-override/nav';
+
+/* 3e. Override bootstrap button styles */
+@import 'theme/bootstrap-override/buttons';
+
+/* 3f. Override bootstrap breadcrumbs styles */
+@import 'theme/bootstrap-override/breadcrumb';
+
+/* 3g. Override bootstrap typography styles */
+@import 'theme/bootstrap-override/type';
+
+/* 3h. Override bootstrap modal styles */
+@import 'theme/bootstrap-override/modal';
+
+/* 3h. Override bootstrap popover styles */
+@import 'theme/bootstrap-override/popover';
+
+/* 3i. Override bootstrap alerts styles */
+@import 'theme/bootstrap-override/alert';
+
+/* 3i. Override bootstrap badges styles */
+@import 'theme/bootstrap-override/badge';
+
+/* 4. Overrides for various plugins that are included with this template */
+@import 'theme/plugin-overrides';
+
+/* 5. Handy Animations  */
+@import 'theme/animations';
+
+/* 6. User Profile  */
+@import 'theme/user_profile';
+
+/* 7. Layout styles */
+@import 'theme/layout';
+
+/* 8. Menu styles */
+@import 'theme/menu';
+
+/* 9. Styles for all element blocks */
+@import 'theme/elements';
+
+/* 10. Helpful little styles */
+@import 'theme/utilities';
+
+/* 11. Icon Fonts */
+@import 'theme/osfont';
+
+/* 12. Chat */
+@import 'theme/chat';
+
+/* 13. App - Email */
+@import 'theme/app_email';
+
+/* 14. App - Projects */
+@import 'theme/projects';
+
+/* 15. App - Full Chat */
+@import 'theme/full_chat';
+
+/* 16. Pricing Plans */
+@import 'theme/pricing_plans';
+
+/* 17. Pipelines */
+@import 'theme/pipelines';
+
+/* 18. Dropdowns */
+@import 'theme/os_dropdowns';
+
+/* 19. App - TODO */
+@import 'theme/todo';
+
+/* 20. Fancy Selector */
+@import 'theme/fancy_selector';
+
+/* 21. App - Rentals */
+@import 'theme/rentals';
+
+/* 22. App - Support */
+@import 'theme/support';
+
+/* 23. Onboarding */
+@import 'theme/onboarding';
+
+/* 24. Top Bar styles */
+@import 'theme/top_bar';
+
+/* 25. Search */
+@import 'theme/search';
+
+/* 26. Customizer */
+@import 'theme/customizer';
+
+/* ##. Dark Color Scheme */
+@import 'theme/scheme_dark';
+
+/* ##. Responsive Styles */
+@import 'theme/responsive';
+
+/* ##. Override Variables */
+@import 'custom/layout';
+
+@import 'custom/loader';
+
+html {
+  font-size: 100% !important;
+}

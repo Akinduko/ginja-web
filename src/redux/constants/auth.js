@@ -1,0 +1,6 @@
+const authConstants = {
+  REFRESH_TOKENS_REQUEST: '@auth/REFRESH_TOKENS/REQUEST',
+  REFRESH_TOKENS_SUCCESS: '@auth/REFRESH_TOKENS/SUCCESS',
+  REFRESH_TOKENS_FAILURE: '@auth/REFRESH_TOKENS/FAILURE'
+};
+export default authConstants;

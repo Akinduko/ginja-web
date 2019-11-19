@@ -1,0 +1,78 @@
+{
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "prettier",
+        "prettier/react"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import",
+        "eslint-plugin-prettier",
+        "eslint-plugin-react"
+    ],
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+    "rules": {
+        "comma-dangle": 0,
+        "react/destructuring-assignment": "off",
+        "react/static-property-placement": ["warn", "static public field"],
+        "prettier/prettier": [
+            "error"
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": true,
+                "classes": true,
+                "variables": false
+            }
+        ],
+        "global-require": "off",
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "jsx-a11y/label-has-associated-control": [ "error", {
+            "required": {
+              "some": [ "nesting", "id"  ]
+            }
+        }],
+        "jsx-a11y/label-has-for": [ "error", {
+            "required": {
+              "some": [ "nesting", "id"  ]
+            }
+          }],
+          "react/jsx-props-no-spreading": ["error",{
+            "html": "ignore",
+            "custom": "enforce"
+        }],
+        "react/state-in-constructor": "off"
+
+    },
+    "settings": {
+        "import/resolver": {
+            "webpack": {
+                "config": "webpack.config.js",
+                "env":{
+                    "NODE_ENV": "development"
+                }
+            }
+        }
+    }
+}

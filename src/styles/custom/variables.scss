@@ -1,0 +1,32 @@
+// BREAKPOINTS **/
+// The tiny screens break point should be used scarcely It's only for special cases
+// where mobile styles fit tiny screens
+$breakpoint-tiny-screens: 375px;
+$breakpoint-tablet: 767px;
+$breakpoint-desktop: 1150px;
+$breakpoint-desktop-xl: 1442px;
+
+// COLORS **/
+$inqblue: rgb(35, 118, 243);
+$inqblue-medium: rgba(35, 118, 243, 0.5);
+$inqblue-light: rgba(35, 118, 243, 0.3);
+
+$dblue: rgb(16, 38, 73);
+$dblue-light: rgba(16, 38, 73, 0.3);
+$dblue-medium: rgba(16, 38, 73, 0.5);
+$dblue-dark: rgba(16, 38, 73, 0.8);
+
+$lblue: rgb(218, 230, 247);
+$lblue-light: rgba(218, 230, 247, 0.3);
+$lblue-medium: rgba(218, 230, 247, 0.5);
+$lblue-dark: rgba(218, 230, 247, 0.8);
+
+$grey: rgb(74, 74, 74);
+$grey-light: rgba(74, 74, 74, 0.3);
+$grey-medium: rgba(74, 74, 74, 0.5);
+$grey-dark: rgba(74, 74, 74, 0.8);
+
+$green: rgb(72, 206, 176);
+
+$white: rgb(255, 255, 255);
+

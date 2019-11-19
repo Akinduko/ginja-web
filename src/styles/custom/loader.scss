@@ -1,0 +1,153 @@
+.dual-ring-loader {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.dual-ring-loader::after {
+  content: ' ';
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid $white;
+  border-color: $white transparent $white transparent;
+  animation: dual-ring-loader 1.2s linear infinite;
+}
+
+@keyframes dual-ring-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.multiple-dots-loader {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+
+  & div {
+    animation: multiple-dots-loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 32px 32px;
+
+    &::after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $grey-dark;
+      margin: -3px 0 0 -3px;
+    }
+  }
+}
+
+.multiple-dots-loader div:nth-child(1) {
+  animation-delay: -0.036s;
+
+  &::after {
+    top: 50px;
+    left: 50px;
+  }
+}
+
+.multiple-dots-loader div:nth-child(2) {
+  animation-delay: -0.072s;
+
+  &::after {
+    top: 54px;
+    left: 45px;
+  }
+}
+
+.multiple-dots-loader div:nth-child(3) {
+  animation-delay: -0.108s;
+
+  &::after {
+    top: 57px;
+    left: 39px;
+  }
+}
+
+.multiple-dots-loader div:nth-child(4) {
+  animation-delay: -0.144s;
+
+  &::after {
+    top: 58px;
+    left: 32px;
+  }
+}
+
+.multiple-dots-loader div:nth-child(5) {
+  animation-delay: -0.18s;
+
+  &::after {
+    top: 57px;
+    left: 25px;
+  }
+}
+
+.multiple-dots-loader div:nth-child(6) {
+  animation-delay: -0.216s;
+
+  &::after {
+    top: 54px;
+    left: 19px;
+  }
+}
+
+.multiple-dots-loader div:nth-child(7) {
+  animation-delay: -0.252s;
+
+  &::after {
+    top: 50px;
+    left: 14px;
+  }
+}
+
+.multiple-dots-loader div:nth-child(8) {
+  animation-delay: -0.288s;
+
+  &::after {
+    top: 45px;
+    left: 10px;
+  }
+}
+
+@keyframes multiple-dots-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ring-loader {
+  transform: unset;
+  display: unset;
+  position: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: unset;
+  height: unset;
+  &:after {
+    border: 5px solid #ffffff;
+    border-color: #ffffff transparent #ffffff transparent;
+    width: 30px;
+    height: 30px;
+  }
+  @media (min-width: 600px) {
+    width: 100%;
+    height: unset;
+  }
+}
