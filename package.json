@@ -92,7 +92,7 @@
   "scripts": {
     "start": "node app.js",
     "start:prod": "npm run build && npm run postbuild && npm run start",
-    "start:dev": "GENERATE_SOURCEMAP=false NODE_ENV=development webpack-dev-server --port 4200",
+    "start:dev": "GENERATE_SOURCEMAP=false NODE_ENV=development webpack-dev-server --port 3000",
     "build": "GENERATE_SOURCEMAP=false NODE_ENV=production webpack --config webpack.config.js --open",
     "postbuild": "purgecss --css build/static/css/*.css --content build/static/index.html build/static/js/*.js --out build/static/css",
     "test": "NODE_ENV=testing jest",
